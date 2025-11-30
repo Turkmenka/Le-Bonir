@@ -1,0 +1,241 @@
+*{
+    font-family: "Josefin Sans", sans-serif;
+}
+/* nav section start */
+.nav{
+    height: 60px;
+    color: #ffffff;
+    background-color: #1A313E;
+}
+/* nav section end */
+
+/* header section start */
+.header-logo h1{
+    font-family: "Henny Penny", system-ui;
+    font-size: 50px;
+    color: #1A313E;
+}
+
+.header-menu li a,
+.header-icon i{
+    color: #1A313E;
+}
+
+.header-menu li.active a,
+.header-menu li a:hover,
+.header-icon i:hover,
+.nav-icons i:hover{
+    color: #138dc2;
+    border-bottom: 2px solid;
+}
+
+.btn{
+    background-color: #1A313E;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: #16262D;
+    color: white;
+}
+/* header section end */
+
+/* hero section start */
+.hero {
+    height: 85vh;
+    background-image: url('/img/hero_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-text{
+    width: 50%;
+    padding-top: 100px !important;
+}
+.hero-text p {
+    font-size: 1.2rem;
+}
+.hero-text h1 {
+    font-size: 6rem;
+    font-weight: 600;
+}
+/* hero section end */
+
+/* features section start */
+.section{
+    background-color: #F3F3F1;
+    color: #1A313E;
+}
+.features-text{
+    padding: 0 100px;
+}
+.features-text h2{
+    font-size: 5rem;
+}
+.features-text p{
+    font-size: 1.2rem;
+}
+.features-text .btn{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.features-text .btn.features-btn{
+    color: #16262D;
+    background-color: #fff;
+    border: 1px solid #16262D;
+}
+.features-text .btn.features-btn:hover{
+    background-color: #16262D;
+    color: #fff;
+}
+.features-img{
+    padding: 0 !important;
+}
+.product-img{
+    width: 900px !important;
+}
+/* features section end */
+
+/* cta section start */
+.cta{
+    position: relative;
+    background-image: url('/img/cta.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta-text{
+    color: white;
+    width: 50%;
+} 
+.cta-text h2{
+    font-size: 5rem;
+    line-height: 70px;
+}   
+.cta-btn{
+    padding: 10px 80px !important;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #16262D;
+    border: none;
+}
+/* cta section end */
+
+/* footer section start */
+.footer,
+.footer a{
+    color: #16262D;
+}
+.footer a.active,
+.footer a:hover,
+.footer i:hover{
+    color: #138dc2;
+    border-bottom: 2px solid;
+}
+/* footer section end */
+
+
+/* media */
+@media screen and (max-width: 1200px){
+    /* hero section */
+    .hero-text{
+        width: 90% !important;
+    }
+    .hero-text h1{
+        font-size: 4rem !important;
+    }
+
+     /* features */
+    .features{
+        flex-direction: column !important;
+    }
+    .features-text{
+        width: 90%;
+        padding: 30px 0 !important;
+    }
+    .features-text h2{
+        font-size: 3.5rem;
+    }
+    .features-text p{
+        font-size: 1rem;
+    }
+    .section .features-img,
+    .section .product-img{
+        width: 100% !important;
+    }
+    .features-text .btn,
+    .features-btn{
+        font-size: 1.5rem;
+        margin: 10px;
+        width: 90%;
+    }
+    /* cta */
+    .cta-text{
+        width: 85%;
+    }
+    .cta-text h2{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 768px){
+    /* nav section */
+    .nav-icons i{
+        font-size: 20px;
+    }
+
+    /* navbar section */
+    .header-logo h1{
+        font-size: 40px !important;
+    }
+
+    /* hero section */
+    .hero{
+        height: 70vh !important;
+    }
+    .hero-text{
+        padding-top: 100px !important;
+    }
+    .hero-text h1{
+        font-size: 2rem !important;
+    }
+    .hero-text p{
+        font-size: 0.7rem !important;
+    }
+
+     /* features */
+    .features{
+        flex-direction: column !important;
+    }
+    .features-text{
+        width: 85%;
+    }
+    .features-text h2{
+        font-size: 2rem;
+    }
+    .features-text p{
+        font-size: 1rem;
+    }
+    .features-img img{
+        width: 100% !important;
+    }
+    .features-text .btn,
+    .features-btn{
+        font-size: 1rem;
+        margin: 10px;
+        width: 90%;
+    }
+
+    /* cta */
+    .cta-text h2{
+        line-height: 50px;
+        font-size: 2.5rem;
+    }
+    .cta-btn{
+        padding: 8px 40px !important;
+        font-size: 1.2rem;
+    }
+}
