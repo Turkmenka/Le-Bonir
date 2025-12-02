@@ -44,7 +44,7 @@
 /* hero section start */
 .hero {
     height: 85vh;
-    background-image: url('/img/hero_img.jpg');
+    background-image: url('img/hero_img.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@
 /* cta section start */
 .cta{
     position: relative;
-    background-image: url('/img/cta.jpeg');
+    background-image: url('img/cta.jpeg');
     background-size: cover;
     background-position: center;
     height: 800px;
